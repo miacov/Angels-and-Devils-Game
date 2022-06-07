@@ -1,5 +1,5 @@
-# Angel and Devils Game
-Simple Java program to play the Angel and Devils game in terminal. 
+# Angels and Devils Game
+Simple Java program to play the Angels and Devils game in terminal. 
 
 The game can either be played in User vs. User mode or in Automated mode where the computer plays against itself.
 
