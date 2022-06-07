@@ -58,12 +58,12 @@ public class PlayAD {
 	}
 	
 	/** 
-	 * Method to get Angel's power from user
+	 * Method to get game mode choice from user
 	 * 
-	 * This method asks the user for the power of the angel in the game. If the user gives a wrong
+	 * This method asks the user for the game mode choice. If the user gives a wrong
 	 * value then the program terminates with an error message.
 	 * 
-	 * @return Returns the power of the Angel
+	 * @return Returns the choice value
 	 */
 	public static int getChoice() {
 		int choice = 0;
@@ -73,7 +73,7 @@ public class PlayAD {
 			choice = sc.nextInt();
 		}
 		else {
-			System.out.println("Error: Wrong choice!");
+			System.out.println("Error: Value is not integer!");
 			System.exit(1);
 		}
 		return choice;
@@ -86,7 +86,7 @@ public class PlayAD {
 	 * from classes PlayADAutomated or PlayADUser to play.
 	 * 
 	 * @param args Not used
-	 * @throws InterruptedException for Thread.sleep(ms) command in ComputerPlayAD's play method
+	 * @throws InterruptedException for Thread.sleep(ms) command in PlayADAutomated's play method
 	 */	
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("The Angel game.");
@@ -94,6 +94,10 @@ public class PlayAD {
 		System.out.println("1 : User vs User");
 		System.out.println("2 : Automated");	
 		int choice = getChoice();
+		if (choice != 1 && choice != 2) {
+			System.out.println("Error: This choice doesn't exist!");
+			System.exit(-1);
+		}		
 		System.out.println();
 		
 		int size = getInitialSize();		
@@ -106,10 +110,6 @@ public class PlayAD {
 		else if (choice == 2) {
 			System.out.println("\nAngel game: Automated");
 			PlayADAutomated.play(size, power);
-		}
-		else {
-			System.out.println("Error: This choice doesn't exist!");
-			System.exit(-1);
 		}
 	
 	}
