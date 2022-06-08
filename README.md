@@ -28,9 +28,9 @@ The game can either be played in User vs. User mode or in Automated mode where t
  * For the devil, the computer checks the angel's direction, which is determined by dividing the board into 4 equal rectangles and seeing in which of the 4 the angel is currently placed (either top-left, top-right, bottom-left, or bottom-right). The computer will block one of the squares on the edges of the board that are in the rectangle that the angel is placed in. If all these squares are already blocked with devil pieces, then the computer will block one of the squares that the angel can reach on its next move.
  
 ## Game Display
- * Angel piece is marked with A
- * Devil pieces are marked with @
- * Empty squares are marked with +
+* Angel piece is marked with A
+* Devil pieces are marked with @
+* Empty squares are marked with +
  
 ~~~
      1   2   3   4   5   6   7   8   9   10      
