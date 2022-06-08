@@ -1,7 +1,7 @@
 # Angels and Devils Game
 Java program to play the Angels and Devils game in terminal. 
 
-The game can either be played in User vs. User mode or in Automated mode where the computer plays against itself.
+The game can either be played in User vs. User mode or in Automated mode, where the computer plays against itself.
 
 ## Game Rules
 * The game has 2 players, an angel and a devil.
