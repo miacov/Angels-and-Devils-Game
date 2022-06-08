@@ -23,9 +23,9 @@ The game can either be played in User vs. User mode or in Automated mode where t
 
 * In Automated mode, the computer plays against itself, controlling both the angel and the devil.
 
- * For the angel, if a square on an edge of the board is accessible and can be reached on the next move, then the computer will play this move to win. If the angel cannot win on the next move, then it is moved to a position that couldn't be reached by the angel in its previous position (the position before the current one). If the angel is on its first move (no previous position) and cannot win on the next move, then the computer will choose a random position for the angel to move to.
+  * For the angel, if a square on an edge of the board is accessible and can be reached on the next move, then the computer will play this move to win. If the angel cannot win on the next move, then it is moved to a position that couldn't be reached by the angel in its previous position (the position before the current one). If the angel is on its first move (no previous position) and cannot win on the next move, then the computer will choose a random position for the angel to move to.
  
- * For the devil, the computer checks the angel's direction, which is determined by dividing the board into 4 equal rectangles and seeing in which of the 4 the angel is currently placed (either top-left, top-right, bottom-left, or bottom-right). The computer will block one of the squares on the edges of the board that are in the rectangle that the angel is placed in. If all these squares are already blocked with devil pieces, then the computer will block one of the squares that the angel can reach on its next move.
+  * For the devil, the computer checks the angel's direction, which is determined by dividing the board into 4 equal rectangles and seeing in which of the 4 the angel is currently placed (either top-left, top-right, bottom-left, or bottom-right). The computer will block one of the squares on the edges of the board that are in the rectangle that the angel is placed in. If all these squares are already blocked with devil pieces, then the computer will block one of the squares that the angel can reach on its next move.
  
 ## Game Display
 * Angel piece is marked with A
