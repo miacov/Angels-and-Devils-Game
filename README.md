@@ -8,7 +8,7 @@ The game can either be played in User vs. User mode or in Automated mode, where 
 
 * The board at the start just has the angel placed at the center, with all other squares being empty. The vertical axis of the board is the X axis, and the horizontal axis is the Y axis. A board with a size N has NxN dimensions.
 
-* The angel has a power of value k, which determines which squares it can jump to. The angel can only move to squares that are reachable by at most k moves of a chess king piece. Jumping over blocked squares and staying stationary is allowed. In essence, the angel at square (x, y) can move to a square (X, Y) as long as |X - x| <= k and |Y - y| <= k. The angel's power cannot be greater than half the size of the board.
+* The angel has a power of value k, which determines which squares it can jump to. The angel can only move to squares that are reachable by at most k moves of a chess king piece. Jumping over blocked squares and staying stationary is allowed. In essence, the angel at square (x, y) can move to a square (X, Y) if |X - x| <= k and |Y - y| <= k. The angel's power cannot be greater than half the size of the board.
 
 * After the angel makes a move, the devil can move to any empty square to block it. This square will no longer be accessible for the rest of the game.
 
